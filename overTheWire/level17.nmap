@@ -1,0 +1,43 @@
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00029s latency).
+Not shown: 996 closed ports
+PORT      STATE SERVICE     VERSION
+31046/tcp open  echo
+31518/tcp open  ssl/echo
+| ssl-cert: Subject: commonName=localhost
+| Subject Alternative Name: DNS:localhost
+| Not valid before: 2020-05-14T12:03:38
+|_Not valid after:  2021-05-14T12:03:38
+|_ssl-date: TLS randomness does not represent time
+31691/tcp open  echo
+31790/tcp open  ssl/unknown
+| fingerprint-strings: 
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, Kerberos, LDAPSearchReq, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, TLSSessionReq: 
+|_    Wrong! Please enter the correct current password
+| ssl-cert: Subject: commonName=localhost
+| Subject Alternative Name: DNS:localhost
+| Not valid before: 2020-05-14T12:03:38
+|_Not valid after:  2021-05-14T12:03:38
+|_ssl-date: TLS randomness does not represent time
+31960/tcp open  echo
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port31790-TCP:V=7.40%T=SSL%I=7%D=5/20%Time=5EC55A66%P=x86_64-pc-linux-g
+SF:nu%r(GenericLines,31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20cu
+SF:rrent\x20password\n")%r(GetRequest,31,"Wrong!\x20Please\x20enter\x20the
+SF:\x20correct\x20current\x20password\n")%r(HTTPOptions,31,"Wrong!\x20Plea
+SF:se\x20enter\x20the\x20correct\x20current\x20password\n")%r(RTSPRequest,
+SF:31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20current\x20password\
+SF:n")%r(Help,31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20current\x
+SF:20password\n")%r(SSLSessionReq,31,"Wrong!\x20Please\x20enter\x20the\x20
+SF:correct\x20current\x20password\n")%r(TLSSessionReq,31,"Wrong!\x20Please
+SF:\x20enter\x20the\x20correct\x20current\x20password\n")%r(Kerberos,31,"W
+SF:rong!\x20Please\x20enter\x20the\x20correct\x20current\x20password\n")%r
+SF:(FourOhFourRequest,31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20c
+SF:urrent\x20password\n")%r(LPDString,31,"Wrong!\x20Please\x20enter\x20the
+SF:\x20correct\x20current\x20password\n")%r(LDAPSearchReq,31,"Wrong!\x20Pl
+SF:ease\x20enter\x20the\x20correct\x20current\x20password\n")%r(SIPOptions
+SF:,31,"Wrong!\x20Please\x20enter\x20the\x20correct\x20current\x20password
+SF:\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 88.55 seconds

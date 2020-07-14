@@ -1,0 +1,12 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-04-05 13:28 CEST
+Nmap scan report for 10.10.232.24
+Host is up (0.055s latency).
+Not shown: 65530 closed ports
+PORT     STATE SERVICE
+111/tcp  open  rpcbind
+5601/tcp open  esmagent
+8000/tcp open  http-alt
+9200/tcp open  wap-wsp
+9300/tcp open  vrace
+
+Nmap done: 1 IP address (1 host up) scanned in 157.52 seconds

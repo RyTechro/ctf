@@ -1,0 +1,10 @@
+# Level 16
+
+bandit16:cluFn7wTiGryunymYOu4RcffSxQluehd
+
+# Solution
+
+`openssl s_client -connect localhost:30001`
+`BfMYroe26WYalil77FoDi9qh59eK5xNr`
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd

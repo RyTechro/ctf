@@ -1,0 +1,13 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-03-19 18:21 CET
+Stats: 0:00:11 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 3.71% done; ETC: 18:27 (0:05:11 remaining)
+Stats: 0:00:40 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 24.90% done; ETC: 18:24 (0:02:04 remaining)
+Nmap scan report for 10.10.94.122
+Host is up (0.027s latency).
+Not shown: 65533 filtered ports
+PORT     STATE SERVICE
+80/tcp   open  http
+3389/tcp open  ms-wbt-server
+
+Nmap done: 1 IP address (1 host up) scanned in 123.39 seconds

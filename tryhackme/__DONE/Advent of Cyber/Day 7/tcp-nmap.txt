@@ -1,0 +1,57 @@
+# Nmap 7.80 scan initiated Wed Mar 18 16:01:22 2020 as: nmap -A -vv -oN tcp-nmap.txt 10.10.52.239
+Nmap scan report for 10.10.52.239
+Host is up, received echo-reply ttl 254 (0.025s latency).
+Scanned at 2020-03-18 16:01:23 CET for 32s
+Not shown: 997 closed ports
+Reason: 997 resets
+PORT    STATE SERVICE REASON          VERSION
+22/tcp  open  ssh     syn-ack ttl 254 OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 90:b9:ee:1a:20:63:93:69:8a:db:7e:08:0a:98:5c:97 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKyE28WmuzaQgtRIM4vaxVfRqOPA7dhYK/u+zQs3WQO1MtVHwJIjKdlaIMG+yP2HaWyeXZA2Xj76PWnWv/25cAj1T4LdXktmWIm9OmehJ+e6Jg0ZNu5QOjTIgDMJuFIUs7cTdoGl1ZRjxFY9vEnbpik6oR0pOcLPcdT5mI/Do0sfrmPrpWWWFclqeZxgI4SOumAbPwSU27C1Mcy9ay0nDUYnIKrJJV0nPDWijN7ygvCaduxUFaFqmJdTPkt24dCIin4V+FSUFNP27PyzHua4RrIv+aYBjrMAU6EGt5HyHgzyWXdCctUMj9nDJy+dZ4vlsJaUzl6UC2GmiimEMZ1VEd
+|   256 c3:7d:76:bd:65:8b:d1:09:9b:e0:a3:47:c2:b3:8e:0d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH9fg7i1z8g+6ut0q7J+sWKizNGY8Sdaq1rjmT0/PwexKzy9S7QnxHVjQMSlAUQ5l9itBVfrM93Dk3KJBPoWfXE=
+|   256 8a:17:cf:f8:ea:eb:61:d2:9e:ad:b2:27:79:5a:d6:96 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ5TcEfTRXZxnKR/sTcT43A78/OwujrXGrk9c+FBZgP7
+111/tcp open  rpcbind syn-ack ttl 254 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          39003/udp6  status
+|   100024  1          44583/tcp   status
+|   100024  1          49449/tcp6  status
+|_  100024  1          53611/udp   status
+999/tcp open  http    syn-ack ttl 254 SimpleHTTPServer 0.6 (Python 3.6.8)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: SimpleHTTP/0.6 Python/3.6.8
+|_http-title: Directory listing for /
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=3/18%OT=22%CT=1%CU=35484%PV=Y%DS=2%DC=T%G=Y%TM=5E7237E
+OS:3%P=x86_64-apple-darwin17.7.0)SEQ(SP=106%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS
+OS:=A)OPS(O1=M54DST11NW6%O2=M54DST11NW6%O3=M54DNNT11NW6%O4=M54DST11NW6%O5=M
+OS:54DST11NW6%O6=M54DST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68
+OS:DF)ECN(R=Y%DF=Y%T=FF%W=6903%O=M54DNNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=FF%S=O%A=
+OS:S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+OS:=)T5(R=Y%DF=Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=FF%W=0%S=A
+OS:%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y
+OS:%DF=N%T=FF%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T
+OS:=FF%CD=S)
+
+Uptime guess: 36.416 days (since Tue Feb 11 06:02:31 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 199/tcp)
+HOP RTT      ADDRESS
+1   27.08 ms 10.9.0.1
+2   27.27 ms 10.10.52.239
+
+Read data files from: /usr/local/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 18 16:01:55 2020 -- 1 IP address (1 host up) scanned in 32.61 seconds

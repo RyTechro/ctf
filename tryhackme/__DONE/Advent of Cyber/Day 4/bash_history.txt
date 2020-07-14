@@ -1,0 +1,9 @@
+ls -la
+cd /home/ec2-user/
+ls
+cd /home/mcsysadmin/
+ls
+rm -rf generate.sh 
+cat .bash_history 
+rm -rf .bash_history 
+exit

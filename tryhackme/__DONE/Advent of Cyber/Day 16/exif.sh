@@ -1,0 +1,1 @@
+find extracted -exec exiftool {} \; | grep 'Version                         : 1.1'

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Jun  1 16:17:13 2020 as: nmap -sV -sC -oA nmap/inital 10.10.137.31
+Host: 10.10.137.31 ()	Status: Up
+Host: 10.10.137.31 ()	Ports: 111/open/tcp//rpcbind//2 (RPC #100000)/, 2049/open/tcp//nfs//2-4 (RPC #100003)/	Ignored State: closed (998)
+# Nmap done at Mon Jun  1 16:17:24 2020 -- 1 IP address (1 host up) scanned in 10.93 seconds

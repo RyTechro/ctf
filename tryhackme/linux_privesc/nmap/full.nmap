@@ -1,0 +1,25 @@
+# Nmap 7.80 scan initiated Mon Jun  1 16:17:24 2020 as: nmap -A -p- -oA nmap/full 10.10.137.31
+Nmap scan report for 10.10.137.31
+Host is up (0.033s latency).
+Not shown: 65527 closed ports
+PORT      STATE SERVICE  VERSION
+22/tcp    open  ssh      OpenSSH 5.5p1 Debian 6+squeeze5 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 a4:6c:d1:c8:5b:03:f2:af:33:3f:84:15:cf:15:ed:ba (DSA)
+|_  2048 08:84:3e:96:4d:9a:2f:a1:db:be:68:29:80:ab:f3:56 (RSA)
+80/tcp    open  http     Apache httpd 2.2.16 ((Debian))
+|_http-server-header: Apache/2.2.16 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+111/tcp   open  rpcbind  2 (RPC #100000)
+2049/tcp  open  nfs      2-4 (RPC #100003)
+8080/tcp  open  http     nginx 1.6.2
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: nginx/1.6.2
+|_http-title: Welcome to nginx on Debian!
+46824/tcp open  status   1 (RPC #100024)
+49378/tcp open  mountd   1-3 (RPC #100005)
+52985/tcp open  nlockmgr 1-4 (RPC #100021)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun  1 16:33:00 2020 -- 1 IP address (1 host up) scanned in 936.24 seconds
