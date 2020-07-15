@@ -1,4 +1,4 @@
 *.opvn
 *.restore
 .DS_STORE
-*.opvn
+*.ovpn
